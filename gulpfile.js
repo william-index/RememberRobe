@@ -21,7 +21,8 @@ gulp.task('sass', function () {
  * Concats Javascript classes and main into a single file
  */
 gulp.task('javascript', function () {
-  return gulp.src(['public/src/javascript/classes/*.js',
+  return gulp.src(['public/src/javascript/includes/db.js',
+                   'public/src/javascript/classes/*.js',
                    'public/src/javascript/main.js'])
     .pipe(concat('main.js', {newLine: ''}))
     .pipe(wrap.header('(function() {'))

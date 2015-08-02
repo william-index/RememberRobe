@@ -3,3 +3,4 @@ public/css/style.css
 public/js/app.js
 *.scssc
 .sass-cache
+db.js

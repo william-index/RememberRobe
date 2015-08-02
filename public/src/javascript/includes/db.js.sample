@@ -1,0 +1,11 @@
+var db = new Firebase('https://<your db-name>.firebaseio.com');
+var user = null;
+
+// Login Authentication
+db.authWithOAuthPopup("github", function(error, authData) {
+  if (error) {
+    console.log("Login Failed!", error);
+  } else {
+    init(authData);
+  }
+});
