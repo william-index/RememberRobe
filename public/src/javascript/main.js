@@ -1,3 +1,6 @@
+var closet_manager = new ClosetManager();
+
+
 /*
  * This is just a sample method to see if your app is set up
  */

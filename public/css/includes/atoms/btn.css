@@ -1,0 +1,1 @@
+body:before{white-space:pre;font-family:monospace;content:"Sass::SyntaxError: \".btn--close\" failed to @extend \".btn\".\A The selector \".btn\" was not found.\A Use \"@extend .btn !optional\" if the extend should be able to fail.\A "}
