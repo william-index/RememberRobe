@@ -1,5 +1,44 @@
 .clothing_type_picker{
+  @include transition(opacity .2s ease-in-out);
 
+  align-items: center;
+  background: $modal_background;
+  display: flex;
+  height: 0px;
+  justify-content: center;
+  left: 0px;
+  opacity: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+
+  &.open {
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+.clothing_type_picker__content {
+  @include transform(translateY(-50px));
+  @include transition(transform .2s ease-in-out);
+
+  background: white;
+  border-radius: $bor_rad;
+  display: block;
+  height: 30vw;
+  position: relative;
+  width: 50%;
+
+  .open & {
+    @include transform(translateY(0));
+  }
+
+  .btn--close {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+  }
 }
 
 .clothing_type_picker__type{

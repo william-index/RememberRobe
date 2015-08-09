@@ -1,7 +1,25 @@
 .btn{
-
+  background: white;
+  border: 1px solid $grey;
+  cursor: pointer;
+  display: block;
+  outline: 0px;
+  padding: 0px;
 }
 
 .btn--close{
   @extend .btn;
+  @include transition(transform .1s ease-in-out);
+
+  background: black;
+  color: white;
+  display: block;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+
+  &:hover {
+    @include transform(scale(1.2)) ;
+  }
 }

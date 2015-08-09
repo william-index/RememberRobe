@@ -1,3 +1,11 @@
 @import 'libraries/bourbon/bourbon';
 @import 'libraries/neat/neat';
 @import 'includes/_reset.scss';
+@import 'includes/_vars.scss';
+@import 'includes/_colors.scss';
+
+// atoms
+@import 'includes/_atoms.scss';
+
+// modules
+@import 'includes/_modules.scss';

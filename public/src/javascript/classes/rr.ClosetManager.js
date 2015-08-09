@@ -24,7 +24,7 @@ var ClosetManager = (function() {
   /*
    * @private {object<DOM Object>}
    */
-  var close_picker_btn = document.querySelector('.js-close_clothing_type_picker');
+  var close_picker_btn = document.querySelector('.js-clothing_type_picker .js-close');
 
   /**
   * Represents the ClosetManager
@@ -40,7 +40,7 @@ var ClosetManager = (function() {
   */
   ClosetManager.prototype.bind_events = function(){
     launch_btn.addEventListener('click', this.launch_type_picker);
-    launch_btn.addEventListener('click', this.launch_type_picker);
+    close_picker_btn.addEventListener('click', this.dismiss_type_picker);
   }
 
   /**

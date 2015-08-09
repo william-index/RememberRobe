@@ -46,3 +46,8 @@ Eventually we can rely on a centralized one, but that has costs.
 - ```node start``` or ```nodemon``` which I prefer
 - run ```gulp watch```
 - view the site at http://localhost:3000
+
+
+# Design Considerations
+
+- Use material design icon fonts: https://www.google.com/design/icons/#ic_subject
